@@ -5,3 +5,5 @@ def move_A_to_C(n,a,b,c):
         move_A_to_C(n-1,a,c,b)
         move_A_to_C(1,a,b,c)
         move_A_to_C(n-1,b,a,c)
+
+move_A_to_C(5, 'A', 'B', 'C')
