@@ -22,5 +22,5 @@ def PalindromePrime(limit):
                 print()
         prime += 1
 
-x = int(input())
+x = 3
 PalindromePrime(x)
