@@ -22,5 +22,5 @@ def PalindromePrime(limit):
                 print()
         prime += 1
 
-x = 3
+x = 5
 PalindromePrime(x)
