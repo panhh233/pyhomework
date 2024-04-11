@@ -8,4 +8,4 @@ def f(n):
     else:
         return f(n-1) + f(n-2) + f(n-3)
 
-print(f(7))
+print(f(10))
