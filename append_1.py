@@ -1,3 +1,2 @@
 def fib(a):
-    a == 0
-#error
+    a == 1
