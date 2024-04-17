@@ -1,8 +1,8 @@
 def huiwen(String):
     if String == String[::-1]:
-        return '{}是回文数'.format(String)
+        print('{}是回文数'.format(String))
     else:
-        return '{}不是回文数'.format(String)
+        print('{}不是回文数'.format(String))
 
 M = input()
-print(huiwen(M))
+huiwen(M)

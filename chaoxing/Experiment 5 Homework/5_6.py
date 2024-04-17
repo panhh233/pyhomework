@@ -1,5 +1,3 @@
-x = int(input())
-
 def FacSum(n):
     sum = 0
     for i in range(1, n):
@@ -7,20 +5,17 @@ def FacSum(n):
             sum += i
     return sum
 
-pairs = set()
+x = int(input())
 
+count = 0
 for num in range(1, x):
     sum1 = FacSum(num)
     sum2 = FacSum(sum1)
-    if num == sum2 and num != sum1:
-        pair = ((min(num, sum1), max(num, sum1)))
-        pairs.add(pair)
+    if num == sum2 and num < sum1:
+        print('亲密数对: A={:>4}, B={:>4}'.format(num, sum1))
+        count += 1
 
-pairs_list = list(pairs)
-pairs_list.sort()
-
-if pairs:
-    for pair in pairs_list:
-        print('亲密数对: A={:>4}, B={:>4}'.format(pair[0], pair[1]))
-else:
+if count == 0:
     print('输出为空')
+else:
+    pass
