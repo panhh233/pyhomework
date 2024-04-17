@@ -12,3 +12,5 @@ for r in range(a, b + 1):
             if prime(s) and prime(r - s):
                 print('{}={}+{}'.format(r, s, r - s))
                 break
+
+#test
