@@ -1,4 +1,4 @@
-class Point:
+class Point(object):
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -6,7 +6,7 @@ class Point:
     def distance(self, other):
         return ((self.x - other.x) ** 2 + (self.y - other.y) ** 2) ** 0.5
 
-class Line:
+class Line(object):
     def __init__(self, point1: Point, point2: Point):
         self.point1 = point1
         self.point2 = point2
@@ -20,7 +20,7 @@ class Line:
         if self.slope == other.slope:
             print('平行') 
         else:
-            print('不平行')
+            print('相交')
 
 x1, y1 = eval(input())
 x2, y2 = eval(input())
