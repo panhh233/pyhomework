@@ -24,9 +24,9 @@ def count_possible_weights(n, weights, quantities):
 
 
 # 示例输入
-n = 3
-weights = [1, 2, 5]
-quantities = [1, 1, 1]
+n = int(input())
+weights = list(eval(input()))
+quantities = list(eval(input()))
 
 # 输出结果
 result = count_possible_weights(n, weights, quantities)
