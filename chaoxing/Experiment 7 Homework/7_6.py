@@ -17,8 +17,8 @@ def count_possible_weights(n, weights, quantities):
     return sum(dp)
 
 n = int(input())
-weights = list(eval(input()))
-quantities = list(eval(input()))
+weights = list(map(int, input().split()))
+quantities = list(map(int, input().split()))
 
 result = count_possible_weights(n, weights, quantities)
 print(result)
